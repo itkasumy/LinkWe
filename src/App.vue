@@ -15,7 +15,7 @@
 				<router-link class="menu el-icon-upload" to="/logisticsmanage">物流管理</router-link>
 				<router-link class="menu el-icon-upload" to="/membermanage">会员管理</router-link>
 				<router-link class="menu el-icon-upload" to="/marketingmanage">营销管理</router-link>
-				<router-link class="menu el-icon-upload" to="/datastatistics">数据统计</router-link>
+				<router-link class="menu el-icon-upload active" to="/datastatistics">数据统计</router-link>
 				<router-link class="menu el-icon-setting" to="/setting">基础设置</router-link>
 			</aside>
 			<main>
@@ -68,7 +68,7 @@ export default {
 				color #757993
 				font-size 14px
 				font-weight 700
-				.active, &:hover
+				&.active, &:hover
 					&:after
 						content ""
 						width 4px
@@ -86,6 +86,7 @@ export default {
 			flex-direction column
 			.main
 				flex 1
+				height calc(100% - 80px)
 			footer
 				height 80px
 				background #ccc
