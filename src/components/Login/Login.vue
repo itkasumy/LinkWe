@@ -6,13 +6,13 @@
 				<div class="inputBox">
 					<div class="text">账号</div>
 					<div class="telNum">
-						<input type="tel" name="tel" class="tel" id="tel" v-model="tel" placeholder="请输入您的手机号">
+						<input type="tel" name="tel" class="tel" id="tel" v-model="loginForm.accout" placeholder="请输入您的手机号">
 					</div>
 				</div>
 				<div class="inputBox">
 					<div class="text">密码</div>
 					<div class="password">
-						<input type="password" name="password" class="pwd" v-model="pwd" id="pwd" placeholder="密码">
+						<input type="password" name="password" class="pwd" v-model="loginForm.password" id="pwd" placeholder="密码">
 					</div>
 				</div>
 				<div class="assistance">
@@ -40,26 +40,15 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
 	data () {
 		return {
-			tel: '',
-			pwd: ''
-		}
-	},
-	methods: {
-		login () {
-			console.log(this.tel, this.pwd)
-			axios.post('http://www.baidu.com/api/login', {
-				tel: this.tel,
-				pwd: this.pwd
-			}, {
-				'headers': {
-					'ksm': 'demo'
-				}
-			}).then(res => {})
+			loginForm: {
+				accout: '',
+				password: ''
+			}
 		}
 	}
 }

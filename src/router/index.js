@@ -1,12 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ElementUI from 'element-ui'
-
-import 'normalize.css'
-import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(Router)
-Vue.use(ElementUI)
 
 const Login = resolve => {
 	import('components/Login/Login').then(module => {
@@ -66,12 +61,12 @@ const DataStatistics = resolve => {
 
 const routes = [
 	{
-		path: '/register',
-		component: Register
-	},
-	{
 		path: '/login',
 		component: Login
+	},
+	{
+		path: '/register',
+		component: Register
 	},
 	{
 		path: '/home',
