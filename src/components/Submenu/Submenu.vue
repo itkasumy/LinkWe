@@ -1,11 +1,30 @@
 <template>
 	<div class="container">
-		Submenu
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
+		<submenu-tmp></submenu-tmp>
 	</div>
 </template>
 
 <script>
-export default {}
+import SubmenuTmp from 'components/SubmenuTmp/SubmenuTmp'
+
+export default {
+	components: {
+		SubmenuTmp
+	}
+}
 </script>
 
 <style scoped lang='stylus' rel='stylesheet/stylus'>

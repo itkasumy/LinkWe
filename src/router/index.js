@@ -10,7 +10,10 @@ import Setting from 'components/Setting/Setting'
 import ShopDesign from 'components/ShopDesign/ShopDesign'
 import MemberManage from 'components/MemberManage/MemberManage'
 import DataStatistics from 'components/DataStatistics/DataStatistics'
+import Login from 'components/Login/Login'
+import Register from 'components/Register/Register'
 
+import 'normalize.css'
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(Router)
@@ -18,6 +21,14 @@ Vue.use(ElementUI)
 
 export default new Router({
 	routes: [
+		{
+			path: '/register',
+			component: Register
+		},
+		{
+			path: '/login',
+			component: Login
+		},
 		{
 			path: '/logisticsmanage',
 			component: LogisticsManage
