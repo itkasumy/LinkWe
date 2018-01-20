@@ -1,13 +1,13 @@
 <template>
 	<aside>
-		<router-link class="menu el-icon-upload" to="/shopdesign">商铺装修</router-link>
-		<router-link class="menu el-icon-sold-out" to="/productmanage">商品管理</router-link>
-		<router-link class="menu el-icon-upload" to="/ordermanage">订单管理</router-link>
-		<router-link class="menu el-icon-upload" to="/logisticsmanage">物流管理</router-link>
-		<router-link class="menu el-icon-upload" to="/membermanage">会员管理</router-link>
-		<router-link class="menu el-icon-upload" to="/marketingmanage">营销管理</router-link>
-		<router-link class="menu el-icon-upload active" to="/datastatistics">数据统计</router-link>
-		<router-link class="menu el-icon-setting" to="/setting">基础设置</router-link>
+		<router-link class="menu el-icon-upload" to="/home/shopdesign">商铺装修</router-link>
+		<router-link class="menu el-icon-sold-out" to="/home/product">商品管理</router-link>
+		<router-link class="menu el-icon-upload" to="/home/order">订单管理</router-link>
+		<router-link class="menu el-icon-upload" to="/home/logistics">物流管理</router-link>
+		<router-link class="menu el-icon-upload" to="/home/member">会员管理</router-link>
+		<router-link class="menu el-icon-upload" to="/home/marketing">营销管理</router-link>
+		<router-link class="menu el-icon-upload active" to="/home/datastatistics">数据统计</router-link>
+		<router-link class="menu el-icon-setting" to="/home/setting">基础设置</router-link>
 	</aside>
 </template>
 
