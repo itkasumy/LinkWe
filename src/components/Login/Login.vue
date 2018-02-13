@@ -26,7 +26,7 @@
 				</div>
 				<div class="loginOrRegister">
 					<div class="login">
-						<input type="button" @click="login" value="登录">
+						<input type="button" value="登录">
 					</div>
 					<div class="register">
 						<router-link to="/register">
